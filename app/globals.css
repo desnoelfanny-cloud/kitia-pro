@@ -17,3 +17,37 @@ a {
 main {
   padding: 40px;
 }
+.navbar {
+  width: 100%;
+  padding: 18px 40px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 15px;
+}
+
+.navLinks a {
+  color: #374151;
+  font-weight: 500;
+}
+
+.navButton {
+  background: #111827;
+  color: white !important;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
