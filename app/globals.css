@@ -56,6 +56,50 @@ main {
 
   border-bottom: 1px solid rgba(0,0,0,.05);
 }
+.p1::after,
+.p2::after,
+.p3::after,
+.p4::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:white;
+
+}
+.p1::after{
+
+    right:-4px;
+    top:7px;
+
+}
+
+.p2::after{
+
+    left:7px;
+    bottom:-4px;
+
+}
+
+.p3::after{
+
+    top:7px;
+    right:-4px;
+
+}
+
+.p4::after{
+
+    left:7px;
+    top:-4px;
+
+}
 
 .logo {
   display: flex;
@@ -66,27 +110,62 @@ main {
   font-weight: 800;
 }
 
-.logoIcon {
+.logoIcon{
 
-  width: 46px;
-  height: 46px;
+    position:relative;
 
-  border-radius: 14px;
+    width:46px;
+    height:46px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.piece{
 
-  font-size: 28px;
-  font-weight: 800;
+    position:absolute;
 
-  color: white;
+    width:22px;
+    height:22px;
 
-  background: var(--gradient);
+    background:var(--gradient);
 
-  box-shadow: 0 15px 40px rgba(59,130,246,.35);
+    border-radius:7px;
+
 }
 
+.p1{
+
+    top:0;
+    left:0;
+
+    border-top-left-radius:10px;
+
+}
+
+.p2{
+
+    top:0;
+    right:0;
+
+    border-top-right-radius:10px;
+
+}
+
+.p3{
+
+    bottom:0;
+    left:0;
+
+    border-bottom-left-radius:10px;
+
+}
+
+.p4{
+
+    bottom:0;
+    right:0;
+
+    border-bottom-right-radius:10px;
+
+}
 .menu {
 
   display: flex;
