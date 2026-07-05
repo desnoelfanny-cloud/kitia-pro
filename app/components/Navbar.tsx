@@ -3,18 +3,28 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="navbar">
-      <Link href="/" className="logo">
-        KitIA Pro
-      </Link>
+      <div className="logo">
+        <div className="logoIcon">K</div>
+        <span>KitIA Pro</span>
+      </div>
 
-      <nav className="navLinks">
+      <nav className="menu">
         <Link href="/">Accueil</Link>
-        <Link href="/recrutia">RecrutIA</Link>
+        <Link href="/fonctionnalites">Fonctionnalités</Link>
+        <Link href="/assistants">Assistants IA</Link>
         <Link href="/tarifs">Tarifs</Link>
-        <Link href="/connexion" className="navButton">
-          Connexion
-        </Link>
+        <Link href="/ressources">Ressources</Link>
       </nav>
+
+      <div className="actions">
+        <Link href="/connexion" className="btnSecondary">
+          Se connecter
+        </Link>
+
+        <Link href="/dashboard" className="btnPrimary">
+          Essayer gratuitement
+        </Link>
+      </div>
     </header>
   );
 }
