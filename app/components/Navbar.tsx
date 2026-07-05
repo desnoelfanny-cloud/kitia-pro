@@ -2,13 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header
-  className="navbar"
-  style={{
-    background: "red",
-    padding: "50px"
-  }}
->
+    <header className="navbar">
       <div className="logo">
         <div className="logoIcon">K</div>
         <span>KitIA Pro</span>
